@@ -5,6 +5,8 @@ import "./globals.css";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { ThemeProvider, ThemeScript } from "@/components/providers/theme-provider";
+import { LiquidEtherDark } from "@/components/background/LiquidEtherDark";
+import { LiquidEtherLight } from "@/components/background/LiquidEtherLight";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +32,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (    
+  return (
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
         <ThemeScript />
@@ -39,10 +41,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
         <ThemeProvider>
-          <div className="flex min-h-screen flex-col">
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <SiteFooter />
+          <div className="relative">
+            <LiquidEtherLight className="dark:hidden opacity-90" />
+            <LiquidEtherDark className="hidden dark:block" />
+            <div className="relative flex min-h-screen flex-col">
+              <SiteHeader />
+              <main className="flex-1">{children}</main>
+              <SiteFooter />
+            </div>
           </div>
         </ThemeProvider>
       </body>
