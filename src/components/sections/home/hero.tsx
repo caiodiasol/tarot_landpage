@@ -33,7 +33,7 @@ export function HomeHero() {
           <FadeIn delay={0.15}>
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg">
-                <Link href="/atendimento">Agende sua consulta</Link>
+                <Link href="/atendimentos">Agende sua consulta</Link>
               </Button>
               <Button asChild variant="secondary" size="lg">
                 <Link href="#ebook">Conheça o e-book</Link>

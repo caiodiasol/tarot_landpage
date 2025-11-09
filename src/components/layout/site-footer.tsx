@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/container";
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
   { href: "/sobre", label: "Sobre" },
-  { href: "/atendimento", label: "Atendimento" },
+  { href: "/atendimentos", label: "Atendimentos" },
   { href: "/loja", label: "Loja" },
   { href: "/contato", label: "Contato" },
 ];

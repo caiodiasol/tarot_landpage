@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
   { href: "/sobre", label: "Sobre" },
-  { href: "/atendimento", label: "Atendimento" },
+  { href: "/atendimentos", label: "Atendimentos" },
   { href: "/loja", label: "Loja" },
   { href: "/contato", label: "Contato" },
 ];
@@ -118,7 +118,7 @@ function MobileMenu({
               );
             })}
             <Button asChild className="mt-2" onClick={onNavigate}>
-              <Link href="/atendimento">Agendar consulta</Link>
+              <Link href="/atendimentos">Agendar consulta</Link>
             </Button>
           </Container>
         </motion.div>

@@ -59,7 +59,7 @@ export default function AtendimentoPage() {
       <Container className="space-y-20">
         <section className="space-y-6 text-center">
           <FadeIn>
-            <span className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Atendimento</span>
+            <span className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Atendimentos</span>
             <h1 className="mt-3 text-4xl font-semibold text-foreground sm:text-5xl">
               Terapias e leituras personalizadas para iluminar sua jornada
             </h1>

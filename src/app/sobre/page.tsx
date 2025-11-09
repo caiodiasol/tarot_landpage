@@ -60,7 +60,7 @@ export default function AboutPage() {
             <div className="relative overflow-hidden rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/30 via-primary/10 to-transparent p-6 shadow-2xl">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-primary/10 bg-primary/20">
                 <Image
-                  src="https://images.unsplash.com/photo-1544731612-de7f96afe55f?auto=format&fit=crop&w=640&q=80"
+                  src="/images/raissa_perfil.jpg"
                   alt="Taróloga realizando leitura de cartas"
                   fill
                   className="object-cover"
