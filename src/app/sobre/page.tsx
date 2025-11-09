@@ -47,7 +47,7 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg">
-                <Link href="/agendamento">Marque sua consulta</Link>
+                <Link href="/atendimento">Marque sua consulta</Link>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link href="/contato">Fale com a equipe</Link>

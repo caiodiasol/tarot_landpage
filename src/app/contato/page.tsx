@@ -46,7 +46,7 @@ export default function ContactPage() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link href="/agendamento">Ver opções de agendamento</Link>
+                <Link href="/atendimento">Ver opções de atendimento</Link>
               </Button>
             </div>
             <p className="text-xs text-muted-foreground">

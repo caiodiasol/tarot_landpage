@@ -14,7 +14,8 @@ import { cn } from "@/lib/utils";
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
   { href: "/sobre", label: "Sobre" },
-  { href: "/agendamento", label: "Agendamento" },
+  { href: "/atendimento", label: "Atendimento" },
+  { href: "/loja", label: "Loja" },
   { href: "/contato", label: "Contato" },
 ];
 
@@ -52,7 +53,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <Button asChild className="hidden sm:inline-flex">
-            <Link href="/agendamento">Agendar consulta</Link>
+            <Link href="/atendimento">Agendar consulta</Link>
           </Button>
           <button
             type="button"
@@ -117,7 +118,7 @@ function MobileMenu({
               );
             })}
             <Button asChild className="mt-2" onClick={onNavigate}>
-              <Link href="/agendamento">Agendar consulta</Link>
+              <Link href="/atendimento">Agendar consulta</Link>
             </Button>
           </Container>
         </motion.div>
