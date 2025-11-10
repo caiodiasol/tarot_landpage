@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { FadeIn } from "@/components/animations/fade-in";
 import { Button } from "@/components/ui/button";
@@ -9,32 +10,48 @@ export function HomeEbookCTA() {
     <section id="ebook" className="py-24">
       <Container>
         <FadeIn className="relative overflow-hidden rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/15 via-background to-background px-6 py-12 sm:p-14">
-          <div className="absolute right-6 top-6 hidden rotate-3 rounded-full border border-primary/40 bg-primary/15 px-4 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-primary md:block">
+          <div className="absolute top-6 hidden text-center rounded-full border border-primary/40 bg-primary/15 px-4 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-primary md:block">
             Conteúdo exclusivo
           </div>
-          <div className="grid gap-10 lg:grid-cols-[1.2fr_minmax(280px,1fr)] lg:items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
-                E-book &ldquo;Rotas pelo Tarot&rdquo; — um guia prático para mergulhar na jornada intuitiva
-              </h2>
-              <p className="text-base text-muted-foreground sm:text-lg">
-                Estruturado em capítulos que combinam fundamentos do Tarot, tiragens terapêuticas e exercícios de reconexão interna. Ideal para quem deseja começar a ler cartas ou aprofundar seus rituais diários.
-              </p>
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(280px,1fr)] lg:items-stretch">
+            <div className="flex flex-col justify-between gap-6">
+              <div className="space-y-4">
+                <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
+                  Ebook - O Seu Arcano de 2026
+                </h2>
+                <p className="text-base text-muted-foreground sm:text-lg">
+                  Um manual exclusivo para interpretar o arcano do Tarot que regerá o seu próximo ano. Entenda como aproveitar essa energia de forma prática, leve e transformadora.
+                </p>
+              </div>
+              <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-primary/20 bg-primary/10 px-4 py-6 shadow-lg lg:hidden">
+                <Link href="https://pay.infinitypay.com/seu-link-aqui" target="_blank" rel="noreferrer">
+                  <div className="relative h-full w-full overflow-hidden rounded-xl bg-background/80">
+                    <Image
+                      src="/capa_ebook.jpg"
+                      alt="Capa do e-book Rotas pelo Tarot"
+                      fill
+                      sizes="(max-width: 1023px) 90vw, 360px"
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                </Link>
+              </div>
               <ul className="grid gap-3 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
-                  7 tiragens guiadas para temas como amor, carreira e propósito.
+                  Aprenda a calcular o seu arcano pessoal de 2026.
                 </li>
                 <li className="flex items-center gap-2 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
-                  Meditações e afirmações para antes e depois das leituras.
+                  Conheça a sequência numérica dos arcanos maiores.
                 </li>
                 <li className="flex items-center gap-2 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
-                  Acesso a playlists, materiais extras e indicação de decks favoritos da Raissa.
+                  Compreenda as energias do seu arcano pessoal do ano e como elas se manifestam em equilíbrio e em desequilíbrio.
                 </li>
               </ul>
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex flex-wrap items-center gap-10">
                 <Button asChild size="lg">
-                  <Link href="https://pay.infinitypay.com/seu-link-aqui" target="_blank" rel="noreferrer">
-                    Comprar agora — R$ 89
+                  <Link href="https://loja.infinitepay.io/tarotraissa/ich7769-o-seu-arcano-de-2026" target="_blank" rel="noreferrer">
+                    Comprar agora - R$ 19,90
                   </Link>
                 </Button>
                 <span className="text-sm font-medium text-muted-foreground">
@@ -43,15 +60,19 @@ export function HomeEbookCTA() {
               </div>
             </div>
             <div className="relative h-full">
-              <div className="hidden h-full min-h-[320px] w-full rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/30 to-transparent p-6 text-primary-foreground shadow-xl lg:flex lg:flex-col lg:justify-between">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.4em] text-primary-foreground/80">Prévia do conteúdo</p>
-                  <h3 className="mt-4 text-2xl font-semibold text-primary-foreground">Capítulo 03 • Tiragens terapêuticas</h3>
+              <div className="hidden h-full min-h-[320px] w-full overflow-hidden rounded-2xl border border-primary/20 bg-primary/10 py-12 shadow-lg lg:flex lg:items-center lg:justify-center">
+                <div className="relative aspect-[3/4] w-full max-w-xs overflow-hidden rounded-2xl bg-background/80">
+                  <Link href="https://loja.infinitepay.io/tarotraissa/ich7769-o-seu-arcano-de-2026" target="_blank" rel="noreferrer">
+                    <Image
+                      src="/capa_ebook.jpg"
+                      alt="Capa do e-book Rotas pelo Tarot"
+                      fill
+                      sizes="(min-width: 1024px) 360px, 100vw"
+                      className="object-cover"
+                      priority
+                    />
+                  </Link>
                 </div>
-                <p className="text-sm leading-relaxed text-primary-foreground/80">
-                  Personalize este espaço com uma prévia real do e-book, um mockup 3D ou depoimentos de quem já adquiriu o material.
-                </p>
-                <span className="text-xs font-semibold uppercase tracking-[0.3em] text-primary-foreground/60">ENTREGA DIGITAL • ACESSO IMEDIATO</span>
               </div>
             </div>
           </div>

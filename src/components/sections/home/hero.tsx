@@ -36,7 +36,7 @@ export function HomeHero() {
                 <Link href="/atendimentos">Agende sua consulta</Link>
               </Button>
               <Button asChild variant="secondary" size="lg">
-                <Link href="#ebook">Conheça o e-book</Link>
+                <Link href="/loja">Conheça o e-book</Link>
               </Button>
             </div>
           </FadeIn>

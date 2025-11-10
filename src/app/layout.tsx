@@ -42,7 +42,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <div className="relative">
-            <LiquidEtherLight className="dark:hidden opacity-90" />
+            <LiquidEtherLight className="dark:hidden" />
             <LiquidEtherDark className="hidden dark:block" />
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />
