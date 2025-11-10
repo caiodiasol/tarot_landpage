@@ -7,6 +7,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { ThemeProvider, ThemeScript } from "@/components/providers/theme-provider";
 import { LiquidEtherDark } from "@/components/background/LiquidEtherDark";
 import { LiquidEtherLight } from "@/components/background/LiquidEtherLight";
+import { FloatingWhatsApp } from "@/components/floatWpp/FloatingWhatapp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +50,7 @@ export default function RootLayout({
               <main className="flex-1">{children}</main>
               <SiteFooter />
             </div>
+            <FloatingWhatsApp />
           </div>
         </ThemeProvider>
       </body>

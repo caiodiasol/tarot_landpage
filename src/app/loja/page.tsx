@@ -29,7 +29,7 @@ export default function StorePage() {
                 <div className="flex items-center justify-center">
                   <div className="relative aspect-[3/4] w-full max-w-xs overflow-hidden rounded-2xl border border-primary/20 bg-background/80">
                     <Link
-                      href="https://loja.infinitepay.io/tarotraissa/ich7769-o-seu-arcano-de-2026"
+                      href="https://pay.hotmart.com/X102873405M"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -61,7 +61,7 @@ export default function StorePage() {
             </div>
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg">
-                <Link href="https://loja.infinitepay.io/tarotraissa/ich7769-o-seu-arcano-de-2026" target="_blank" rel="noreferrer">
+                <Link href="https://pay.hotmart.com/X102873405M" target="_blank" rel="noreferrer">
                   Comprar agora - R$ 19,90
                 </Link>
               </Button>
@@ -84,7 +84,7 @@ export default function StorePage() {
             </ul>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild size="lg">
-                <Link href="https://loja.infinitepay.io/tarotraissa/ich7769-o-seu-arcano-de-2026" target="_blank" rel="noreferrer">
+                <Link href="https://pay.hotmart.com/X102873405M" target="_blank" rel="noreferrer">
                   Garantir meu acesso agora
                 </Link>
               </Button>

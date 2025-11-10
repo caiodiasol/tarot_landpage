@@ -24,7 +24,7 @@ export function HomeEbookCTA() {
                 </p>
               </div>
               <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-primary/20 bg-primary/10 px-4 py-6 shadow-lg lg:hidden">
-                <Link href="https://pay.infinitypay.com/seu-link-aqui" target="_blank" rel="noreferrer">
+                <Link href="https://pay.hotmart.com/X102873405M" target="_blank" rel="noreferrer">
                   <div className="relative h-full w-full overflow-hidden rounded-xl bg-background/80">
                     <Image
                       src="/capa_ebook.jpg"
@@ -50,19 +50,19 @@ export function HomeEbookCTA() {
               </ul>
               <div className="flex flex-wrap items-center gap-10">
                 <Button asChild size="lg">
-                  <Link href="https://loja.infinitepay.io/tarotraissa/ich7769-o-seu-arcano-de-2026" target="_blank" rel="noreferrer">
+                  <Link href="https://pay.hotmart.com/X102873405M" target="_blank" rel="noreferrer">
                     Comprar agora - R$ 19,90
                   </Link>
                 </Button>
                 <span className="text-sm font-medium text-muted-foreground">
-                  Link de pagamento gerenciado na InfinityPay (substitua pelo link oficial).
+                  Link de pagamento gerenciado pela Hortmart.
                 </span>
               </div>
             </div>
             <div className="relative h-full">
               <div className="hidden h-full min-h-[320px] w-full overflow-hidden rounded-2xl border border-primary/20 bg-primary/10 py-12 shadow-lg lg:flex lg:items-center lg:justify-center">
                 <div className="relative aspect-[3/4] w-full max-w-xs overflow-hidden rounded-2xl bg-background/80">
-                  <Link href="https://loja.infinitepay.io/tarotraissa/ich7769-o-seu-arcano-de-2026" target="_blank" rel="noreferrer">
+                  <Link href="https://pay.hotmart.com/X102873405M" target="_blank" rel="noreferrer">
                     <Image
                       src="/capa_ebook.jpg"
                       alt="Capa do e-book Rotas pelo Tarot"
