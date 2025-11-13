@@ -179,7 +179,7 @@ export function ContactForm({ className }: { className?: string }) {
           id="message"
           rows={5}
           placeholder="Me conte o que você está buscando com um atendimento de Tarot e quais as suas dúvidas."
-          className="w-full rounded-3xl border border-border bg-transparent px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
+          className="w-full resize-none rounded-3xl border border-border bg-transparent px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
           {...register("message")}
         />
         {errors.message && <p className="text-xs text-destructive">{errors.message.message}</p>}
