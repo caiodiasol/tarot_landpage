@@ -40,7 +40,7 @@ export function SiteHeader() {
               priority
             />
           </div>
-          <span className="text-xl font-semibold">Raissa Tarot</span>
+          <span className="text-xl font-semibold">Raissa Tarot Terapêutico</span>
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">

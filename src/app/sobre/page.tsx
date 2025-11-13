@@ -7,28 +7,28 @@ import { Container } from "@/components/ui/container";
 
 const timeline = [
   {
-    year: "2008",
+    year: "2006",
     title: "Início da jornada",
     description:
-      "Primeiros contatos com o Tarot ainda na adolescência, fortalecendo a mediunidade guiada pela família e pela tradição ancestral.",
+      "Desde criança, Raissa já se conectava ao Tarot. Em 2006, deu início aos atendimentos para outras pessoas, transformando o que antes era apenas estudo e adoração, em um caminho de propósito e entrega.",
   },
   {
     year: "2014",
-    title: "Formação e estudos",
+    title: "Aprofundamento e estudos",
     description:
-      "Cursos em terapias integrativas, cromoterapia e constelação familiar ampliam o repertório para atendimentos completos.",
+      "Ao longo dos anos, Raissa se dedicou a expandir seus conhecimentos em espiritualidade e terapias energéticas, fortalecendo a intuição e aprimorando a escuta sensível que guia suas leituras até hoje.",
   },
   {
-    year: "2018",
+    year: "2020",
     title: "Atendimentos online",
     description:
-      "Raissa expande o trabalho para acolher consulentes de todo o Brasil, mantendo a mesma qualidade e energia do espaço físico.",
+      "Durante a pandemia, Raissa iniciou os atendimentos online, expandindo seu trabalho para acolher pessoas de diferentes lugares do Brasil e do mundo. O formato digital se manteve desde então, com a mesma presença, sensibilidade e conexão das leituras presenciais.",
   },
   {
     year: "2023",
-    title: "E-book e mentorias",
+    title: "Novos ciclos e projetos",
     description:
-      "Lança conteúdos autorais, mentorias em grupo e projetos especiais para quem deseja aprofundar a conexão com o Tarot.",
+      "Além das leituras, Raissa passou a compartilhar conteúdos autorais e projetos especiais, levando o Tarot como ferramenta de consciência, expansão e transformação pessoal para novos espaços e formatos.",
   },
 ];
 
@@ -40,17 +40,14 @@ export default function AboutPage() {
           <FadeIn className="space-y-6">
             <span className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Sobre a taróloga</span>
             <h1 className="text-balance text-4xl font-semibold text-foreground sm:text-5xl">
-              Raissa Tarot — uma trajetória dedicada a traduzir sinais em clareza
+              Raissa - uma trajetória dedicada ao estudo dos oráculos e da espiritualidade.
             </h1>
             <p className="text-pretty text-base text-muted-foreground sm:text-lg">
-              Mais de 15 anos de experiência com oráculos, terapias vibracionais e escuta compassiva. Raissa guia cada sessão com sensibilidade, respeito e responsabilidade ética, oferecendo direcionamentos que unem tradição, intuição e visão de futuro.
+              Com mais de 15 anos de experiência com o Tarot e a espiritualidade, Raissa conduz as leituras guiadas por sabedoria, intuição e cuidado, criando um espaço de acolhimento para quem busca clareza, equilíbrio e reconexão com o seu propósito.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg">
                 <Link href="/atendimento">Marque sua consulta</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="/contato">Fale com a equipe</Link>
               </Button>
             </div>
           </FadeIn>
@@ -66,9 +63,6 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <p className="mt-4 text-xs font-medium uppercase tracking-[0.3em] text-primary-foreground">
-                Substitua por foto oficial da taróloga
-              </p>
             </div>
           </FadeIn>
         </section>
@@ -77,32 +71,25 @@ export default function AboutPage() {
           <FadeIn className="rounded-3xl border border-primary/20 bg-background/80 p-8 shadow-sm">
             <h2 className="text-2xl font-semibold text-primary">Propósito & abordagem</h2>
             <p className="mt-4 text-base text-muted-foreground">
-              Cada consulta é um convite à autoconsciência. Raissa integra Tarot, numerologia e práticas terapêuticas para construir insights personalizados, oferecendo planos de ação que acolhem mente, corpo e espírito.
+              Cada leitura é um convite ao autoconhecimento. Raissa integra o Tarot e práticas terapêuticas para trazer clareza, orientação e cura emocional, sempre com escuta atenta e acolhedora, respeitando o momento de cada pessoa.
             </p>
-            <ul className="mt-6 grid gap-3 text-sm text-muted-foreground">
-              <li className="flex items-center gap-2 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
-                Atendimento sem julgamentos, com escuta ativa e sigilo absoluto.
-              </li>
-              <li className="flex items-center gap-2 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
-                Integração de oráculos, cristais, aromaterapia e rituais personalizados.
-              </li>
-              <li className="flex items-center gap-2 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
-                Acompanhamento pós-sessão com materiais de apoio e recapitulação.
-              </li>
-            </ul>
+            <p className="mt-4 text-base text-muted-foreground">
+              Durante as leituras, o Tarot é utilizado como ferramenta de reflexão e expansão de consciência, abrindo caminhos para decisões mais alinhadas e uma vida com mais presença e propósito.
+            </p>
           </FadeIn>
 
           <FadeIn delay={0.1} className="rounded-3xl border border-primary/20 bg-primary/5 p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold text-primary">Formações & certificações</h2>
-            <p className="mt-4 text-base text-muted-foreground">
-              Atualize este bloco com certificações reais, cursos e eventos nos quais a taróloga participou.
-            </p>
-            <div className="mt-6 grid gap-4 text-sm text-muted-foreground">
-              <p>• Especialização em Tarot Terapêutico — Escola Arcanos, 2013</p>
-              <p>• Formação em Terapias Integrativas — Espaço Luz, 2016</p>
-              <p>• Imersão em Oráculos Ancestrais — Centro Harmonia, 2019</p>
-              <p>• Mentora convidada em retiros espirituais e círculos de mulheres desde 2021</p>
-            </div>
+            <h2 className="text-2xl font-semibold text-primary">A jornada por trás das cartas</h2>
+              
+              <p className="mt-4 text-base text-muted-foreground">
+                Guiada pela espiritualidade desde cedo, Raissa cresceu em um ambiente onde o Tarot era presença viva, uma herança passada de mãe para filha. 
+              </p>
+              <p className="mt-4 text-base text-muted-foreground">
+                O encanto pelas cartas surgiu ainda na infância e, com o tempo, se transformou em uma prática de escuta sensível e transformação interior. Sua conexão com o Tarot carrega a força da ancestralidade e o propósito de curar, especialmente as dores do feminino. 
+             </p>
+             <p className="mt-4 text-base text-muted-foreground">
+                Hoje, cada leitura reflete essa caminhada, unindo intuição e sabedoria para iluminar caminhos e despertar novas percepções sobre a própria jornada.
+             </p>
           </FadeIn>
         </section>
 
@@ -113,7 +100,7 @@ export default function AboutPage() {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {timeline.map((item, index) => (
               <FadeIn key={item.year} delay={index * 0.05}>
-                <div className="rounded-3xl border border-primary/15 bg-background/80 p-6 shadow-sm">
+                <div className="flex h-full flex-col rounded-3xl border border-primary/15 bg-background/80 p-6 shadow-sm">
                   <span className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">{item.year}</span>
                   <h3 className="mt-4 text-lg font-semibold text-foreground">{item.title}</h3>
                   <p className="mt-3 text-sm text-muted-foreground">{item.description}</p>

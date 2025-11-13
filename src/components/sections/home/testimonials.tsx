@@ -3,19 +3,19 @@ import { Container } from "@/components/ui/container";
 
 const testimonials = [
   {
-    name: "Marina S.",
+    name: "Vanessa V.",
     quote:
-      "A leitura com a Raissa transformou completamente a forma como eu encaro minhas escolhas. Foi acolhimento puro e clareza em cada carta.",
+      "Quando joguei tarot pela primeira vez com a Raissa, estava em um momento de muitas dúvidas e decisões importantes a tomar. A leitura me trouxe uma clareza muito interessante e me ajudou a conduzir melhor as minhas questões. Recomendo muito essa experiência para quem busca orientação ou simplesmente quer entender melhor o momento que está vivendo.",
   },
   {
-    name: "João A.",
+    name: "Camila M.",
     quote:
-      "Saí da sessão com um plano prático e muita paz no coração. A condução dela é humana, direta e sempre respeitosa.",
+      "Eu amei muito a minha experiência! Foi super leve e enriquecedora. Senti que estava abrindo um livro da minha própria vida, absolutamente TUDO fez sentido ou deu sentido para as coisas que ainda estavam nebulosas na minha cabeça. Vai ser muito importante começar o ano após essas reflexões e com certeza começarei muito mais leve e decidida.",
   },
   {
-    name: "Elisa M.",
+    name: "Gleyce P.",
     quote:
-      "O e-book trouxe exercícios que ainda uso semanalmente. É um conteúdo rico, ideal para quem quer criar rituais significativos.",
+      "Minha primeira consulta com a Raissa foi em um momento muito difícil da minha vida. A leitura foi surpreendentemente assertiva. Na época, tudo parecia distante, mas aos poucos as coisas começaram a acontecer exatamente como ela descreveu. A forma como ela conduz a leitura é impressionante: direta, cuidadosa e muito cirúrgica. Recomendo muito, especialmente para quem busca clareza e direcionamento.",
   },
 ];
 
@@ -26,11 +26,8 @@ export function HomeTestimonials() {
         <FadeIn className="max-w-2xl">
           <span className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Experiências reais</span>
           <h2 className="mt-3 text-3xl font-semibold text-foreground sm:text-4xl">
-            Depoimentos de quem já vivenciou a jornada
+            Depoimentos de quem já viveu essa transformação:
           </h2>
-          <p className="mt-4 text-base text-muted-foreground">
-            Traga para este espaço comentários e avaliações coletadas nas redes sociais ou plataformas de agendamento. São provas sociais essenciais para gerar confiança.
-          </p>
         </FadeIn>
 
         <div className="grid gap-6 md:grid-cols-3">

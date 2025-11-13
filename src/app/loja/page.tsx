@@ -34,7 +34,7 @@ export default function StorePage() {
                       rel="noreferrer"
                     >
                       <Image
-                        src="/capa_ebook.jpg"
+                        src="/capa_ebook3.jpg"
                         alt="Capa do e-book O Seu Arcano de 2026"
                         fill
                         sizes="(min-width: 1024px) 360px, 100vw"
@@ -45,8 +45,8 @@ export default function StorePage() {
                   </div>
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-primary mt-8">O que você vai encontrar</h2>
-                  <ul className="mt-4 grid gap-3 text-sm text-muted-foreground">
+                  <h2 className="text-lg font-bold text-primary mt-8">O que você vai encontrar:</h2>
+                  <ul className="mt-4 grid gap-6 text-base text-muted-foreground">
                     {highlights.map((item) => (
                       <li
                         key={item}
@@ -59,17 +59,17 @@ export default function StorePage() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 justify-center">
               <Button asChild size="lg">
                 <Link href="https://pay.hotmart.com/X102873405M" target="_blank" rel="noreferrer">
                   Comprar agora - R$ 19,90
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link href="/contato">Tire dúvidas com a equipe</Link>
+                <Link href="/contato">Entre em contato</Link>
               </Button>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground text-center">
               Pagamento seguro via InfinityPay. Após a confirmação, você recebe o link de download imediato e atualizações futuras.
             </p>
           </FadeIn>
@@ -88,7 +88,7 @@ export default function StorePage() {
                   Garantir meu acesso agora
                 </Link>
               </Button>
-              <Button asChild variant="ghost" size="lg">
+              <Button asChild variant="outline" size="lg">
                 <Link href="/atendimentos">Agendar consulta com a Raissa</Link>
               </Button>
             </div>

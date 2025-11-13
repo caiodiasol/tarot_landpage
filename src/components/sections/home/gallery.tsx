@@ -1,54 +1,60 @@
 "use client";
 
+import { useMemo } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
 import { FadeIn } from "@/components/animations/fade-in";
 import { Container } from "@/components/ui/container";
 
 const cards = [
-  "Mesa de Tarot com cristais e velas",
-  "Raissa acolhendo consulente",
-  "Registro de anotações pós-sessão",
-  "Ambiente preparado para leitura",
-  "Oráculos complementares e baralhos",
+  { image: "/carousel1.jpg" },
+  { image: "/carousel22.jpg" },
+  { image: "/carousel3.jpg" },
+  { image: "/carousel44.jpg" },
+  { image: "/carousel5.jpg" },
 ];
 
-const loopedCards = [...cards, ...cards];
+const BASE_DURATION = 20;
 
 export function HomeGallery() {
+  const marqueeCards = useMemo(() => [...cards, ...cards], []);
+
   return (
     <section className="py-20">
       <Container className="space-y-12 overflow-hidden">
         <FadeIn className="max-w-2xl">
           <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
-            Um espaço sensorial, pensado para sua experiência
+            Um espaço para sentir, se perceber e se reencontrar
           </h2>
-          <p className="mt-4 text-base text-muted-foreground">
-            Substitua estas imagens pelos registros reais do ateliê: o carrossel pode ser integrado a partir de uma galeria ou CMS, mantendo o mesmo layout.
-          </p>
         </FadeIn>
 
         <div className="relative isolation-auto overflow-hidden rounded-3xl">
-          <div className="pointer-events-none absolute inset-0 z-10 from-background via-transparent to-background" aria-hidden="true" />
+          <div
+            className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-background via-transparent to-background"
+            aria-hidden="true"
+          />
 
-          <div className="flex min-w-max gap-6">
-            <div className="flex min-w-max gap-6 animate-[marquee_30s_linear_infinite]">
-              {loopedCards.map((label, index) => (
-                <div
-                  key={`${label}-${index}`}
-                  className="relative h-64 w-64 shrink-0 overflow-hidden rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/50 to-transparent p-6 text-sm text-primary-foreground shadow-lg"
-                >
-                  <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary">
-                    Placeholder
-                  </span>
-                  <p className="mt-4 font-medium leading-relaxed text-primary-foreground">
-                    {label}
-                  </p>
-                  <span className="absolute bottom-4 right-4 text-xs text-primary-foreground/70">
-                    Atualize com imagem real
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
+          <motion.div
+            className="flex min-w-max gap-6"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ duration: BASE_DURATION, ease: "linear", repeat: Infinity }}
+          >
+            {marqueeCards.map((card, index) => (
+              <div
+                key={`gallery-${index}`}
+                className="relative h-64 w-64 shrink-0 overflow-hidden rounded-3xl border border-primary/20 bg-primary/10 shadow-lg"
+              >
+                <Image
+                  src={card.image}
+                  alt={`Galeria de imagens ${index + 1}`}
+                  fill
+                  sizes="256px"
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </motion.div>
         </div>
       </Container>
     </section>

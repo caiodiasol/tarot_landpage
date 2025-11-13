@@ -27,7 +27,7 @@ export function HomeEbookCTA() {
                 <Link href="https://pay.hotmart.com/X102873405M" target="_blank" rel="noreferrer">
                   <div className="relative h-full w-full overflow-hidden rounded-xl bg-background/80">
                     <Image
-                      src="/capa_ebook.jpg"
+                      src="/capa_ebook3.jpg"
                       alt="Capa do e-book Rotas pelo Tarot"
                       fill
                       sizes="(max-width: 1023px) 90vw, 360px"
@@ -44,17 +44,21 @@ export function HomeEbookCTA() {
                 <li className="flex items-center gap-2 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
                   Conheça a sequência numérica dos arcanos maiores.
                 </li>
-                <li className="flex items-center gap-2 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
+                <li className="flex items-center gap-2 before:flex-shrink-0 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
                   Compreenda as energias do seu arcano pessoal do ano e como elas se manifestam em equilíbrio e em desequilíbrio.
                 </li>
               </ul>
-              <div className="flex flex-wrap items-center gap-10">
-                <Button asChild size="lg">
+              <div className="flex flex-col items-center gap-2 text-center sm:items-start sm:text-left">
+                <Button
+                  asChild
+                  size="lg"
+                  className="w-full max-w-xs sm:max-w-none sm:w-auto sm:self-start"
+                >
                   <Link href="https://pay.hotmart.com/X102873405M" target="_blank" rel="noreferrer">
                     Comprar agora - R$ 19,90
                   </Link>
                 </Button>
-                <span className="text-sm font-medium text-muted-foreground">
+                <span className="mt-2 text-sm font-medium text-muted-foreground sm:mt-6">
                   Link de pagamento gerenciado pela Hortmart.
                 </span>
               </div>
@@ -64,7 +68,7 @@ export function HomeEbookCTA() {
                 <div className="relative aspect-[3/4] w-full max-w-xs overflow-hidden rounded-2xl bg-background/80">
                   <Link href="https://pay.hotmart.com/X102873405M" target="_blank" rel="noreferrer">
                     <Image
-                      src="/capa_ebook.jpg"
+                      src="/capa_ebook3.jpg"
                       alt="Capa do e-book Rotas pelo Tarot"
                       fill
                       sizes="(min-width: 1024px) 360px, 100vw"

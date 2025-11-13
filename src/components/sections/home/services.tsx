@@ -3,19 +3,19 @@ import { Container } from "@/components/ui/container";
 
 const services = [
   {
-    title: "Tarot Terapêutico",
+    title: "Para expandir sua visão",
     description:
-      "Leitura aprofundada com foco em autoconhecimento, desbloqueios emocionais e direcionamento prático para seus próximos passos.",
+      "Leituras que trazem novas perspectivas e te ajudam a enxergar a vida sob um ângulo mais amplo e consciente.",
   },
   {
-    title: "Mentoria Espiritual",
+    title: "Para restaurar o equilíbrio",
     description:
-      "Sessões individuais que alinham intuição, oráculos e práticas integrativas para fortalecer sua jornada espiritual.",
+      "Um espaço para compreender o que está em desequilíbrio e te ajudar a reconectar mente, corpo e emoção.",
   },
   {
-    title: "Cerimônias Personalizadas",
+    title: "Para caminhar com confiança",
     description:
-      "Rituais de abertura de caminhos, harmonização energética e celebrações especiais com a assinatura da taróloga.",
+      "Quando o caminho aparece com dúvidas, o Tarot traz luz e compreensão, te ajudando a seguir com coragem e confiança, cada vez mais alinhada ao seu propósito.",
   },
 ];
 
@@ -25,10 +25,10 @@ export function HomeServices() {
       <Container className="space-y-12">
         <FadeIn className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-3xl font-semibold text-foreground sm:text-4xl">
-            Cuidado holístico para iluminar decisões com serenidade
+          Um olhar sensível e profundo para ajudar a iluminar suas decisões
           </h2>
           <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-            Cada atendimento é conduzido com escuta ativa, sigilo e acolhimento, unindo técnicas ancestrais a uma visão moderna do Tarot.
+            Cada leitura é conduzida com presença e sensibilidade, unindo o conhecimento do Tarot a uma escuta acolhedora, que respeita sua verdade e seu momento, sem julgamentos.
           </p>
         </FadeIn>
 
@@ -38,9 +38,6 @@ export function HomeServices() {
               <div className="flex h-full flex-col rounded-3xl border border-primary/15 bg-primary/5 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                 <h3 className="text-lg font-semibold text-primary">{service.title}</h3>
                 <p className="mt-3 text-sm text-muted-foreground">{service.description}</p>
-                <span className="mt-auto pt-6 text-xs font-semibold uppercase tracking-[0.3em] text-primary/80">
-                  Personalize com detalhes reais das terapias
-                </span>
               </div>
             </FadeIn>
           ))}
