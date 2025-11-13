@@ -14,7 +14,7 @@ export default function ContactPage() {
             <span className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Contato</span>
             <h1 className="mt-3 text-4xl font-semibold text-foreground sm:text-5xl">Vamos conversar?</h1>
             <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-              Preencha o formulário ou chame pelo WhatsApp. Respondemos em até 24 horas com detalhes de agenda, formatos e investimento.
+              Preencha o formulário abaixo ou já chame no WhatsApp. Responderei o mais rápido possível.
             </p>
           </FadeIn>
         </section>
@@ -27,17 +27,14 @@ export default function ContactPage() {
           <FadeIn delay={0.1} className="grid gap-6 rounded-3xl border border-primary/20 bg-primary/5 p-6 shadow-sm">
             <div>
               <h2 className="text-lg font-semibold text-primary">Informações úteis</h2>
-              <p className="mt-2 text-sm text-muted-foreground">
-                ● Atendimento presencial: Rua Exemplo, 123 — Bairro da Liberdade, São Paulo/SP.
-              </p>
               <p className="text-sm text-muted-foreground">
-                ● Atendimento online via Google Meet ou Zoom.
+                ● Atendimento online via Google Meet ou áudio no Whatsapp.
               </p>
             </div>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>Email: <span className="font-medium text-foreground">contato@raissatarot.com</span></p>
-              <p>WhatsApp: <span className="font-medium text-foreground">(11) 97508-8928</span></p>
-              <p>Horário de atendimento: Segunda a sábado, das 10h às 20h.</p>
+              <p>Email: <span className="font-medium text-foreground">tarot.raissa@gmail.com</span></p>
+              <p>WhatsApp: <span className="font-medium text-foreground">(31) 99573-7940</span></p>
+              <p>Horário de atendimento: Segunda a sexta, mediante agendamento.</p>
             </div>
             <div className="space-y-3">
               <Button asChild size="lg">
@@ -46,12 +43,9 @@ export default function ContactPage() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link href="/agendamento">Ver opções de agendamento</Link>
+                <Link href="/atendimentos">Ver opções de atendimento</Link>
               </Button>
             </div>
-            <p className="text-xs text-muted-foreground">
-              Personalize os dados com seus contatos oficiais. Itens adicionais como Instagram, Telegram ou endereço comercial podem ser adicionados aqui.
-            </p>
           </FadeIn>
         </section>
       </Container>

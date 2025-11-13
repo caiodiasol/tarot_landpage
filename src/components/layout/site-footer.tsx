@@ -34,10 +34,9 @@ export function SiteFooter() {
       <Container className="flex flex-col gap-10 py-10 md:flex-row md:items-start md:justify-between">
         {/* Coluna esquerda - descrição */}
         <div className="max-w-sm space-y-3 text-center md:text-left">
-          <p className="text-lg font-semibold text-primary">Raissa Tarot</p>
+          <p className="text-lg font-semibold text-primary">Raissa Tarot Terapêutico</p>
           <p className="text-sm text-muted-foreground">
-            Espaço de terapias integrativas e leituras de Tarot com acolhimento, intuição e propósito.
-            Personalize estas informações com a identidade da taróloga.
+            Espaço de leituras de Tarot e terapias com atenção, acolhimento e intuição. Cada atendimento é pensado para promover cura, autoconhecimento e fortalecer sua caminhada.
           </p>
         </div>
 

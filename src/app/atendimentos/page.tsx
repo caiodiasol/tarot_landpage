@@ -8,30 +8,32 @@ const services = [
   {
     title: "Tarot Terapêutico",
     description:
-      "Sessão focada em clarear decisões afetivas, profissionais e espirituais. Inclui plano de ação e acompanhamento por 7 dias via mensagem.",
-    duration: "60 min",
-    format: "Online ou presencial",
+      "Nessa leitura, trago um direcionamento completo para todas as áreas das sua vida. De forma profunda e detalhada, apresento previsões e revelações valiosas para os próximos 3 meses, te ajudando a tomar decisões com mais clareza e confiança e respondendo e esclarecendo todas as suas dúvidas.",
+    duration: "Até 1h30min",
+    price: "R$ 180,00",
+    format: "Online ao vivo por vídeo chamada ou áudio e foto no whatsapp",
   },
   {
-    title: "Tarot de Relacionamento",
+    title: "Tarot Livre",
     description:
-      "Leitura dedicada a casais ou vínculos familiares, trabalhando comunicação, reconciliação e alinhamento de expectativas.",
-    duration: "75 min",
-    format: "Online (videochamada)",
+      "Nessa leitura você terá uma hora para fazer perguntas ao Tarot, esclarecendo todas as dúvidas que estiver sentindo no momento.",
+    duration: "Até 1 hora",
+    price: "R$ 150,00",
+    format: "Online ao vivo por vídeo chamada ou áudio e foto no whatsapp",
   },
   {
-    title: "Mentoria Intuitiva",
+    title: "Tarot do Amor",
     description:
-      "Programa em 4 encontros para despertar sua leitura pessoal do Tarot, com exercícios, estudos de caso e suporte entre sessões.",
-    duration: "4 encontros quinzenais",
-    format: "Online",
+      "Uma leitura profunda que explora os sentimentos, pensamentos e desejos do casal, esclarecendo o presente da relação e as possibilidades e caminhos que o futuro pode seguir.",
+    price: "R$ 110,00",
+    format: "Enviado por whatsapp em até 2 dias úteis",
   },
   {
-    title: "Numerologia Alquímica",
+    title: "Perguntas Objetivas",
     description:
-      "Mapa numerológico completo com foco em ciclos pessoais, propósito e planejamento anual. Entrega em PDF + encontro explicativo.",
-    duration: "Encontro de 90 min",
-    format: "Online ou presencial",
+      "Leitura rápida para responder uma dúvida específica.",
+    price: " 1 pergunta - R$ 35,00 | 3 perguntas - R$ 85,00",
+    format: "Enviado por whatsapp em até 1 dia útil",
   },
 ];
 
@@ -39,17 +41,17 @@ const steps = [
   {
     title: "Primeiro contato",
     detail:
-      "Você envia suas dúvidas pelo formulário ou WhatsApp. Respondemos em até 24 horas com datas disponíveis e orientações de preparo.",
+      "Escolha a leitura que deseja e entre em contato pelo WhatsApp para definir o melhor dia e horário para você.",
   },
   {
-    title: "Confirmação",
+    title: "Pagamento e confirmação",
     detail:
-      "Após definir o serviço ideal, enviamos link seguro na InfinityPay e checklist personalizado para você chegar confiante ao encontro.",
+      "O agendamento só é confirmado mediante pagamento, que pode ser feito via Pix ou cartão de crédito (com acréscimo das taxas da maquininha). Após a confirmação, você recebe o link do Google Meet para atendimentos por vídeo. Para leituras via WhatsApp, basta aguardar o envio dentro do prazo estimado da leitura escolhida.",
   },
   {
-    title: "Sessão e suporte",
+    title: "Atendimento e acompanhamento",
     detail:
-      "Conduzimos a leitura ou mentorias com acolhimento. Depois, você recebe materiais extras, resumo das cartas e acompanhamento opcional.",
+      "Durante nosso encontro, a leitura é conduzida com atenção, carinho e cuidado, sempre focando nas suas questões. Depois da leitura, se surgir qualquer dúvida, estou à disposição para ajudar.Para quem escolhe atendimentos por chamada de vídeo, a leitura pode ser gravada e enviada para que você possa assistir novamente quando desejar.",
   },
 ];
 
@@ -61,10 +63,10 @@ export default function AtendimentoPage() {
           <FadeIn>
             <span className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Atendimentos</span>
             <h1 className="mt-3 text-4xl font-semibold text-foreground sm:text-5xl">
-              Terapias e leituras personalizadas para iluminar sua jornada
+              Leituras personalizadas para iluminar seu caminho e trazer clareza ao seu momento
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground sm:text-lg">
-              Escolha o formato que melhor conversa com o seu momento. Todos os atendimentos são conduzidos pela Raissa com sigilo, ética e direcionamento prático.
+              Escolha o atendimento que reflete suas necessidades atuais e explore caminhos de compreensão e crescimento. Todos os atendimentos são guiados com sigilo, ética, atenção e cuidado.
             </p>
           </FadeIn>
           <FadeIn delay={0.05} className="flex flex-wrap justify-center gap-4">
@@ -72,9 +74,6 @@ export default function AtendimentoPage() {
               <Link href="https://wa.me/5511975088928" target="_blank" rel="noreferrer">
                 Falar pelo WhatsApp
               </Link>
-            </Button>
-            <Button asChild variant="secondary" size="lg">
-              <Link href="/contato">Enviar formulário</Link>
             </Button>
           </FadeIn>
         </section>
@@ -88,14 +87,35 @@ export default function AtendimentoPage() {
                   <p className="text-sm text-muted-foreground">{service.description}</p>
                 </header>
                 <dl className="mt-4 flex flex-wrap gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-primary/80">
-                  <div>
-                    <dt>Duração</dt>
-                    <dd className="text-base normal-case tracking-normal text-foreground">{service.duration}</dd>
-                  </div>
-                  <div>
-                    <dt>Formato</dt>
-                    <dd className="text-base normal-case tracking-normal text-foreground">{service.format}</dd>
-                  </div>
+                  {service.duration ? (
+                    <div>
+                      <dt>Duração</dt>
+                      <dd className="text-base normal-case tracking-normal text-foreground">{service.duration}</dd>
+                    </div>
+                  ) : null}
+                  {service.price ? (
+                    <div className="min-w-[160px]">
+                      <dt>Investimento</dt>
+                      <dd className="text-base normal-case tracking-normal text-foreground">
+                        {service.title === "Perguntas Objetivas" ? (
+                          <div className="space-y-1">
+                            <div>1 pergunta — R$ 35,00</div>
+                            <div>3 perguntas — R$ 85,00</div>
+                          </div>
+                        ) : (
+                          service.price
+                        )}
+                      </dd>
+                    </div>
+                  ) : null}
+                  {service.format ? (
+                    <div
+                      className={`min-w-[160px] ${["Tarot do Amor", "Perguntas Objetivas"].includes(service.title) ? "basis-full" : ""}`}
+                    >
+                      <dt>Formato</dt>
+                      <dd className="text-base normal-case tracking-normal text-foreground">{service.format}</dd>
+                    </div>
+                  ) : null}
                 </dl>
                 <div className="mt-auto pt-6">
                   <Button asChild variant="outline" className="w-full">
@@ -113,7 +133,7 @@ export default function AtendimentoPage() {
           <FadeIn>
             <h2 className="text-2xl font-semibold text-foreground">Como funcionam os encontros</h2>
             <p className="mt-4 text-base text-muted-foreground">
-              Cada atendimento é um processo de co-criação. Acompanhamos você antes, durante e depois para que as mensagens recebidas possam ser aplicadas com confiança.
+              Cada atendimento é pensado para se adequar ao seu momento, oferecendo clareza, orientação e acolhimento. Você escolhe a leitura que deseja e seguimos juntas em cada etapa para que a experiência seja segura, prática e transformadora.
             </p>
             <div className="mt-6 grid gap-4">
               {steps.map((step, index) => (
@@ -126,13 +146,21 @@ export default function AtendimentoPage() {
           </FadeIn>
 
           <FadeIn delay={0.05} className="grid gap-4 rounded-3xl border border-primary/15 bg-primary/40 p-6 text-sm text-primary-foreground shadow-sm">
-            <h3 className="text-lg font-semibold text-primary-foreground">O que levar para a sessão presencial?</h3>
-            <p>
-              Traga perguntas-chave, use roupas confortáveis e, se quiser, objetos pessoais (cristais, amuletos) para potencializar sua experiência. O espaço é climatizado, silencioso e preparado energeticamente antes de cada atendimento.
-            </p>
-            <p className="text-xs text-primary-foreground/80">
-              Endereço: Rua Exemplo, 123 — Liberdade, São Paulo/SP. Informe-nos com antecedência sobre necessidades especiais de acessibilidade.
-            </p>
+            <h3 className="text-lg font-semibold text-primary-foreground text-center">Política de Atendimento</h3>
+            <ul className="grid gap-3 text-sm text-muted-foreground">
+              <li className="flex items-center gap-2 before:flex-shrink-0 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
+                Agendamentos devem ser feitos pelo WhatsApp.
+              </li>
+              <li className="flex items-center gap-2 before:flex-shrink-0 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
+                Pagamento via Pix ou cartão de crédito (com pequeno acréscimo de taxas) no momento do agendamento para reserva do horário.
+              </li>
+              <li className="flex items-center gap-2 before:flex-shrink-0 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
+                Leituras são realizadas de segunda a sexta-feira, nos horários combinados durante o agendamento.
+              </li>
+              <li className="flex items-center gap-2 before:flex-shrink-0 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
+              Não realizo atendimentos ou respondo questões relacionadas a diagnóstico de doenças, jogos e apostas, morte e crimes.
+              </li>
+            </ul>
           </FadeIn>
         </section>
 
@@ -142,7 +170,7 @@ export default function AtendimentoPage() {
               Vamos cuidar do seu momento com dedicação e presença
             </h2>
             <p className="mx-auto max-w-xl text-base text-muted-foreground">
-              Se ainda estiver em dúvida sobre qual serviço escolher, fale conosco. Juntas(os) definimos o atendimento ideal para responder às suas perguntas.
+              Se ainda estiver em dúvida sobre qual leitura escolher, entre em contato. Juntas vamos definir o atendimento ideal para te ajudar na sua caminhada.
             </p>
           </FadeIn>
           <FadeIn delay={0.05} className="flex flex-wrap justify-center gap-4">
@@ -150,9 +178,6 @@ export default function AtendimentoPage() {
               <Link href="https://wa.me/5511975088928" target="_blank" rel="noreferrer">
                 Conversar no WhatsApp
               </Link>
-            </Button>
-            <Button asChild variant="secondary" size="lg">
-              <Link href="/contato">Quero enviar formulário</Link>
             </Button>
           </FadeIn>
         </section>
