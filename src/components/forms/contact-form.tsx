@@ -159,12 +159,12 @@ export function ContactForm({ className }: { className?: string }) {
 
       <div className="grid gap-2">
         <label htmlFor="subject" className="text-sm font-medium text-foreground">
-          Assunto da mensagem
+          Tipo de Atendimento
         </label>
         <input
           id="subject"
           type="text"
-          placeholder="Ex.: Leitura de Tarot Terapêutico"
+          placeholder="Ex.: Tarot Terapêutico"
           className="h-11 rounded-full border border-border bg-transparent px-4 text-sm text-foreground outline-none transition focus:border-primary"
           {...register("subject")}
         />

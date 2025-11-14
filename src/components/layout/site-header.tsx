@@ -40,7 +40,7 @@ export function SiteHeader() {
               priority
             />
           </div>
-          <span className="text-xl font-semibold">Raissa Tarot Terapêutico</span>
+          <span className="text-xl font-semibold">Tarot Raissa</span>
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
@@ -64,7 +64,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <Button asChild className="hidden sm:inline-flex">
-            <Link href="/atendimento">Agendar consulta</Link>
+            <Link href="/atendimentos">Agendar consulta</Link>
           </Button>
           <button
             type="button"

@@ -21,11 +21,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Raissa Tarot | Terapias Integrativas",
-    template: "%s | Raissa Tarot",
+    default: "Tarot Raissa",
+    template: "%s | Tarot Raissa",
   },
-  description:
-    "Consultas de Tarot e terapias holísticas com acolhimento, intuição e direcionamento para decisões conscientes.",
 };
 
 export default function RootLayout({
