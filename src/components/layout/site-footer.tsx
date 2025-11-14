@@ -81,7 +81,7 @@ export function SiteFooter() {
       {/* Linha inferior */}
       <div className="border-t border-border/50 bg-background/70">
         <Container className="flex flex-col gap-2 py-4 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Raissa Tarot. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Tarot Raissa. Todos os direitos reservados.</p>
           <p className="font-medium">
             Atualize com telefone, e-mail e redes sociais no próximo passo.
           </p>

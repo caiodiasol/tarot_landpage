@@ -8,10 +8,10 @@ import { Container } from "@/components/ui/container";
 
 export function HomeHero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-primary/5 via-background to-background pb-24 pt-28">
+    <section className="relative overflow-hidden pb-24 pt-28">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-y-0 -left-24 h-full w-72 rounded-full bg-primary/10 blur-3xl" aria-hidden="true" />
-        <div className="absolute inset-y-0 -right-24 h-full w-72 rounded-full bg-secondary/10 blur-3xl" aria-hidden="true" />
+        <div className="absolute inset-y-0 -left-24 h-full w-72 rounded-full blur-3xl" aria-hidden="true" />
+        <div className="absolute inset-y-0 -right-24 h-full w-72 rounded-full blur-3xl" aria-hidden="true" />
       </div>
 
       <Container className="relative z-10 flex flex-col items-center text-center">

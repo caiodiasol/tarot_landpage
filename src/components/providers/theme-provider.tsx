@@ -41,7 +41,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     if (typeof document !== "undefined") {
       return document.documentElement.classList.contains("dark") ? "dark" : "light";
     }
-    return "light";
+    return "dark";
   });
 
   useEffect(() => {
@@ -84,7 +84,7 @@ export function ThemeScript() {
   const script = `(() => {
     try {
       const stored = localStorage.getItem('${STORAGE_KEY}');
-      const theme = stored === 'dark' ? 'dark' : 'light';
+      const theme = stored === 'light' ? 'light' : 'dark';
       const root = document.documentElement;
       root.classList.toggle('dark', theme === 'dark');
       root.style.colorScheme = theme;
