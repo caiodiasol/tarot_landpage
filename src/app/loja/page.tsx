@@ -70,7 +70,7 @@ export default function StorePage() {
               </Button>
             </div>
             <p className="text-sm text-muted-foreground text-center">
-              Pagamento seguro via InfinityPay. Após a confirmação, você recebe o link de download imediato e atualizações futuras.
+            Link de pagamento gerenciado pela Hortmart.
             </p>
           </FadeIn>
         </section>

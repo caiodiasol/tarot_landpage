@@ -45,7 +45,7 @@ export default function AboutPage() {
             <p className="text-pretty text-base text-muted-foreground sm:text-lg">
               Com mais de 15 anos de experiência com o Tarot e a espiritualidade, Raissa conduz as leituras guiadas por sabedoria, intuição e cuidado, criando um espaço de acolhimento para quem busca clareza, equilíbrio e reconexão com o seu propósito.
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 justify-center">
               <Button asChild size="lg">
                 <Link href="/atendimentos">Marque sua consulta</Link>
               </Button>
