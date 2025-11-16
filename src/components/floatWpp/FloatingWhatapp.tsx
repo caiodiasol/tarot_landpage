@@ -4,7 +4,7 @@ import Image from "next/image";
 export function FloatingWhatsApp() {
   return (
     <Link
-      href="https://wa.me/5531995737940"
+      href="https://wa.me/5531995737940?text=Oi%20Raissa%2C%20gostaria%20de%20marcar%20uma%20leitura%20de%20Tarot."
       target="_blank"
       rel="noreferrer"
       className="fixed bottom-4 right-4 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-green-500 shadow-lg transition hover:scale-105 hover:bg-green-400 sm:bottom-6 sm:right-6 md:h-14 md:w-14"

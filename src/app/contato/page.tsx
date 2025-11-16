@@ -38,7 +38,7 @@ export default function ContactPage() {
             </div>
             <div className="space-y-3">
               <Button asChild size="lg">
-                <Link href="https://wa.me/5511975088928" target="_blank" rel="noreferrer">
+                <Link href="https://wa.me/5531995737940?text=Oi%20Raissa%2C%20gostaria%20de%20marcar%20uma%20leitura%20de%20Tarot." target="_blank" rel="noreferrer">
                   Marque sua consulta no WhatsApp
                 </Link>
               </Button>

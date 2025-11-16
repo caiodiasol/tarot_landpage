@@ -12,7 +12,7 @@ const NAV_ITEMS = [
 
 const SOCIAL_LINKS = [
   {
-    href: "https://wa.me/5531995737940",
+    href: "https://wa.me/5531995737940?text=Oi%20Raissa%2C%20gostaria%20de%20marcar%20uma%20leitura%20de%20Tarot.",
     label: "WhatsApp",
     icon: "/images/icons/whats.png",
   },

@@ -47,7 +47,7 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg">
-                <Link href="/atendimento">Marque sua consulta</Link>
+                <Link href="/atendimentos">Marque sua consulta</Link>
               </Button>
             </div>
           </FadeIn>

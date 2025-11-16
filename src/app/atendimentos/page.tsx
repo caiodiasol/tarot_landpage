@@ -12,6 +12,7 @@ const services = [
     duration: "Até 1h30min",
     price: "R$ 180,00",
     format: "Online ao vivo por vídeo chamada ou áudio e foto no whatsapp",
+    whatsappMessage: "Oi Raissa, gostaria de agendar uma leitura de Tarot Terapêutico.",
   },
   {
     title: "Tarot Livre",
@@ -20,6 +21,7 @@ const services = [
     duration: "Até 1 hora",
     price: "R$ 150,00",
     format: "Online ao vivo por vídeo chamada ou áudio e foto no whatsapp",
+    whatsappMessage: "Oi Raissa, gostaria de agendar uma leitura de Tarot Livre.",
   },
   {
     title: "Tarot do Amor",
@@ -27,6 +29,7 @@ const services = [
       "Uma leitura profunda que explora os sentimentos, pensamentos e desejos do casal, esclarecendo o presente da relação e as possibilidades e caminhos que o futuro pode seguir.",
     price: "R$ 110,00",
     format: "Enviado por whatsapp em até 2 dias úteis",
+    whatsappMessage: "Oi Raissa, gostaria de agendar uma leitura de Tarot do Amor.",
   },
   {
     title: "Perguntas Objetivas",
@@ -34,8 +37,16 @@ const services = [
       "Leitura rápida para responder uma dúvida específica.",
     price: " 1 pergunta - R$ 35,00 | 3 perguntas - R$ 85,00",
     format: "Enviado por whatsapp em até 1 dia útil",
+    whatsappMessage: "Oi Raissa, gostaria de fazer uma leitura de Perguntas Objetivas.",
   },
 ];
+
+const WHATSAPP_NUMBER = "5531995737940";
+
+function getWhatsAppLink(message: string): string {
+  const encodedMessage = encodeURIComponent(message);
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+}
 
 const steps = [
   {
@@ -71,7 +82,7 @@ export default function AtendimentoPage() {
           </FadeIn>
           <FadeIn delay={0.05} className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg">
-              <Link href="https://wa.me/5511975088928" target="_blank" rel="noreferrer">
+              <Link href="https://wa.me/5531995737940?text=Oi%20Raissa%2C%20gostaria%20de%20marcar%20uma%20leitura%20de%20Tarot." target="_blank" rel="noreferrer">
                 Falar pelo WhatsApp
               </Link>
             </Button>
@@ -119,7 +130,7 @@ export default function AtendimentoPage() {
                 </dl>
                 <div className="mt-auto pt-6">
                   <Button asChild variant="outline" className="w-full">
-                    <Link href="https://wa.me/5511975088928" target="_blank" rel="noreferrer">
+                    <Link href={getWhatsAppLink(service.whatsappMessage)} target="_blank" rel="noreferrer">
                       Agendar este atendimento
                     </Link>
                   </Button>
@@ -175,7 +186,7 @@ export default function AtendimentoPage() {
           </FadeIn>
           <FadeIn delay={0.05} className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg">
-              <Link href="https://wa.me/5511975088928" target="_blank" rel="noreferrer">
+              <Link href="https://wa.me/5531995737940?text=Oi%20Raissa%2C%20gostaria%20de%20marcar%20uma%20leitura%20de%20Tarot." target="_blank" rel="noreferrer">
                 Conversar no WhatsApp
               </Link>
             </Button>
