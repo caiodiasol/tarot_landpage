@@ -17,7 +17,7 @@ export default function StorePage() {
       <Container className="space-y-20">
         <section className="grid gap-12">
           <FadeIn className="space-y-6">
-            <span className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Loja Raissa Tarot</span>
+            <span className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Loja Tarot Raissa</span>
             <h1 className="text-balance text-2xl font-semibold text-foreground sm:text-4xl">
               LEITURA DE TAROT ANUAL - Descubra o que 2026 reserva pra você mês a mês
             </h1>
@@ -64,6 +64,9 @@ export default function StorePage() {
                         </Link>
                       </Button>
                     </div>
+                    <p className="mt-2 text-sm text-muted-foreground text-center">
+                      Você recebe sua leitura em até 5 dias úteis, em um PDF super completo, detalhado e pensado para te acompanhar ao longo do ano.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -113,7 +116,7 @@ export default function StorePage() {
                   </ul>
                   <div className="mt-6 space-y-3 text-center lg:text-left">
                     <p className="text-base font-semibold text-foreground text-center">
-                      R$ 19,90
+                      Apenas R$ 19,90
                     </p>
                     <div className="flex justify-center lg:justify-center">
                       <Button asChild size="lg">

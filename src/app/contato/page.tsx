@@ -27,8 +27,11 @@ export default function ContactPage() {
           <FadeIn delay={0.1} className="grid gap-6 rounded-3xl border border-primary/20 bg-primary/5 p-6 shadow-sm text-center">
             <div>
               <h2 className="text-lg font-semibold text-primary">Informações úteis</h2>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground mt-2">
                 Atendimento online via Google Meet ou áudio no Whatsapp.
+              </p>
+              <p className="text-sm text-muted-foreground mt-2">
+                Formas de pagamento: Pix ou cartão de crédito (sujeito a taxas do cartão).
               </p>
             </div>
             <div className="space-y-2 text-sm text-muted-foreground">

@@ -61,6 +61,9 @@ export function HomeLeituraAnualCTA() {
                     Comprar agora
                   </Link>
                 </Button>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Você recebe sua leitura em até 5 dias úteis, em um PDF super completo, detalhado e pensado para te acompanhar ao longo do ano.
+                </p>
               </div>
             </div>
             <div className="relative h-full">

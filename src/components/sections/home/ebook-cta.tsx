@@ -50,7 +50,7 @@ export function HomeEbookCTA() {
               </ul>
               <div className="flex flex-col items-center gap-3 text-center">
                 <p className="text-base font-semibold text-foreground">
-                  R$ 19,90
+                  Apenas R$ 19,90
                 </p>
                 <Button
                   asChild
