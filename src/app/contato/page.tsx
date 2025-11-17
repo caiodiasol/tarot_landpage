@@ -24,11 +24,11 @@ export default function ContactPage() {
             <ContactForm />
           </FadeIn>
 
-          <FadeIn delay={0.1} className="grid gap-6 rounded-3xl border border-primary/20 bg-primary/5 p-6 shadow-sm">
+          <FadeIn delay={0.1} className="grid gap-6 rounded-3xl border border-primary/20 bg-primary/5 p-6 shadow-sm text-center">
             <div>
               <h2 className="text-lg font-semibold text-primary">Informações úteis</h2>
               <p className="text-sm text-muted-foreground">
-                ● Atendimento online via Google Meet ou áudio no Whatsapp.
+                Atendimento online via Google Meet ou áudio no Whatsapp.
               </p>
             </div>
             <div className="space-y-2 text-sm text-muted-foreground">
