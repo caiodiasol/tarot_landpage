@@ -14,7 +14,7 @@ export default function ContactPage() {
             <span className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Contato</span>
             <h1 className="mt-3 text-4xl font-semibold text-foreground sm:text-5xl">Vamos conversar?</h1>
             <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-              Preencha o formulário abaixo ou já chame no WhatsApp. Responderei o mais rápido possível.
+              Preencha o formulário abaixo ou chame no WhatsApp. Responderei o mais rápido possível.
             </p>
           </FadeIn>
         </section>

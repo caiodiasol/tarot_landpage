@@ -40,7 +40,7 @@ export default function AboutPage() {
           <FadeIn className="space-y-6">
             <span className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Sobre a taróloga</span>
             <h1 className="text-balance text-4xl font-semibold text-foreground sm:text-5xl">
-              Raissa - uma trajetória dedicada ao estudo dos oráculos e da espiritualidade.
+              Raissa - uma trajetória dedicada ao estudo dos oráculos e da espiritualidade
             </h1>
             <p className="text-pretty text-base text-muted-foreground sm:text-lg">
               Com mais de 15 anos de experiência com o Tarot e a espiritualidade, Raissa conduz as leituras guiadas por sabedoria, intuição e cuidado, criando um espaço de acolhimento para quem busca clareza, equilíbrio e reconexão com o seu propósito.
@@ -69,7 +69,7 @@ export default function AboutPage() {
 
         <section className="grid gap-10 lg:grid-cols-2">
           <FadeIn className="rounded-3xl border border-primary/20 bg-background/80 p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold text-primary">Propósito & abordagem</h2>
+            <h2 className="text-2xl font-semibold text-primary">Propósito e abordagem</h2>
             <p className="mt-4 text-base text-muted-foreground">
               Cada leitura é um convite ao autoconhecimento. Raissa integra o Tarot e práticas terapêuticas para trazer clareza, orientação e cura emocional, sempre com escuta atenta e acolhedora, respeitando o momento de cada pessoa.
             </p>

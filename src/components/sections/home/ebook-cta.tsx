@@ -27,7 +27,7 @@ export function HomeEbookCTA() {
                 <Link href="https://pay.hotmart.com/X102873405M" target="_blank" rel="noreferrer">
                   <div className="relative h-full w-full overflow-hidden rounded-xl bg-background/80">
                     <Image
-                      src="/capa_ebook3.jpg"
+                      src="/ebook_capa.png"
                       alt="Capa do e-book Rotas pelo Tarot"
                       fill
                       sizes="(max-width: 1023px) 90vw, 360px"
@@ -68,7 +68,7 @@ export function HomeEbookCTA() {
                 <div className="relative aspect-[3/4] w-full max-w-xs overflow-hidden rounded-2xl bg-background/80">
                   <Link href="https://pay.hotmart.com/X102873405M" target="_blank" rel="noreferrer">
                     <Image
-                      src="/capa_ebook3.jpg"
+                      src="/ebook_capa.png"
                       alt="Capa do e-book Rotas pelo Tarot"
                       fill
                       sizes="(min-width: 1024px) 360px, 100vw"

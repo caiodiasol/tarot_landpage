@@ -62,7 +62,7 @@ const steps = [
   {
     title: "Atendimento e acompanhamento",
     detail:
-      "Durante nosso encontro, a leitura é conduzida com atenção, carinho e cuidado, sempre focando nas suas questões. Depois da leitura, se surgir qualquer dúvida, estou à disposição para ajudar.Para quem escolhe atendimentos por chamada de vídeo, a leitura pode ser gravada e enviada para que você possa assistir novamente quando desejar.",
+      "Durante nosso encontro, a leitura é conduzida com atenção, carinho e cuidado, sempre focando nas suas questões. Depois da leitura, se surgir qualquer dúvida, estou à disposição para ajudar. Para quem escolhe atendimentos por chamada de vídeo, a leitura pode ser gravada e enviada para que você possa assistir novamente quando desejar.",
   },
 ];
 

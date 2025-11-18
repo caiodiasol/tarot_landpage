@@ -7,8 +7,8 @@ import { Container } from "@/components/ui/container";
 
 const highlights = [
   "Aprenda a calcular o seu arcano pessoal de 2026",
-  "Conheça a sequência numérica dos arcanos maiores",
-  "Compreenda as energias do seu arcano anual em equilíbrio e desequilíbrio",
+  "Interpretação completa do seu arcano em equilíbrio e desequilíbrio",
+  "Orientações para aplicar essa energia ao longo do ano",
 ];
 
 export default function StorePage() {
@@ -41,7 +41,7 @@ export default function StorePage() {
                   </div>
                 </div>
                 <div>
-                  <h2 className="text-lg font-bold text-primary mt-8 text-center">O que você vai encontrar:</h2>
+                  <h2 className="text-lg font-bold text-primary mt-8 text-center">Alguns benefícios da Leitura Anual:</h2>
                   <ul className="mt-4 grid gap-6 text-base text-muted-foreground">
                     <li className="flex items-center gap-2 rounded-2xl border border-primary/15 bg-background/80 p-4 before:flex-shrink-0 before:h-1.5 before:w-1.5 before:rounded-full before:bg-primary">
                       Menos ansiedade para o seu ano
@@ -92,7 +92,7 @@ export default function StorePage() {
                       rel="noreferrer"
                     >
                       <Image
-                        src="/capa_ebook3.jpg"
+                        src="/ebook_capa.png"
                         alt="Capa do e-book O Seu Arcano de 2026"
                         fill
                         sizes="(min-width: 1024px) 360px, 100vw"
