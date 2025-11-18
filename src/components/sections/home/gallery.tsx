@@ -1,8 +1,8 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState, useEffect, useRef, startTransition } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 import { FadeIn } from "@/components/animations/fade-in";
 import { Container } from "@/components/ui/container";
@@ -19,9 +19,41 @@ const BASE_DURATION = 20;
 
 export function HomeGallery() {
   const marqueeCards = useMemo(() => [...cards, ...cards], []);
+  const [shouldAnimate, setShouldAnimate] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
+
+  // Lazy load: só inicia animação quando estiver próximo de ser visível
+  useEffect(() => {
+    // Limpa timer anterior se existir
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
+
+    if (isInView) {
+      // Pequeno delay para não competir com o background no carregamento inicial
+      timerRef.current = setTimeout(() => {
+        startTransition(() => {
+          setShouldAnimate(true);
+        });
+      }, 300);
+    } else {
+      // Pausa quando sai da viewport usando startTransition
+      startTransition(() => {
+        setShouldAnimate(false);
+      });
+    }
+
+    return () => {
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
+    };
+  }, [isInView]);
 
   return (
-    <section className="py-20">
+    <section className="py-20" ref={ref}>
       <Container className="space-y-12 overflow-hidden">
         <FadeIn className="max-w-2xl">
           <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
@@ -37,13 +69,18 @@ export function HomeGallery() {
 
           <motion.div
             className="flex min-w-max gap-6"
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: BASE_DURATION, ease: "linear", repeat: Infinity }}
+            style={{
+              willChange: "transform",
+              transform: "translate3d(0, 0, 0)",
+            }}
+            animate={shouldAnimate ? { x: ["0%", "-50%"] } : { x: "0%" }}
+            transition={{ duration: BASE_DURATION, ease: "linear", repeat: shouldAnimate ? Infinity : 0 }}
           >
             {marqueeCards.map((card, index) => (
               <div
                 key={`gallery-${index}`}
                 className="relative h-64 w-64 shrink-0 overflow-hidden rounded-3xl border border-primary/20 bg-primary/10 shadow-lg"
+                style={{ willChange: "transform" }}
               >
                 <Image
                   src={card.image}
@@ -51,6 +88,7 @@ export function HomeGallery() {
                   fill
                   sizes="256px"
                   className="object-cover"
+                  loading="lazy"
                 />
               </div>
             ))}

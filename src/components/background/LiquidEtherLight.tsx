@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import LiquidEther, { LiquidEtherProps } from './LiquidEther';
 
 const lightDefaultColors = ['#EAE4FF', '#F8F5FF', '#FFE6FF', '#C7B8FF'];
@@ -9,7 +8,7 @@ export function LiquidEtherLight({
   colors = lightDefaultColors,
   autoIntensity = 1.2,
   autoSpeed = 0.3,
-  resolution,
+  resolution = 0.5,
   iterationsPoisson = 20,
   iterationsViscous = 20,
   dt = 0.016,
@@ -17,26 +16,12 @@ export function LiquidEtherLight({
   className,
   ...rest
 }: LiquidEtherProps) {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
-  // Reduz resolução no mobile para melhor performance
-  const finalResolution = resolution ?? (isMobile ? 0.35 : 0.5);
-
   return (
     <LiquidEther
       colors={colors}
       autoIntensity={autoIntensity}
       autoSpeed={autoSpeed}
-      resolution={finalResolution}
+      resolution={resolution}
       iterationsPoisson={iterationsPoisson}
       iterationsViscous={iterationsViscous}
       dt={dt}
