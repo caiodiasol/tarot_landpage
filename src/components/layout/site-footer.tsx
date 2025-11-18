@@ -14,7 +14,7 @@ const SOCIAL_LINKS = [
   {
     href: "https://wa.me/5531995737940?text=Oi%20Raissa%2C%20gostaria%20de%20marcar%20uma%20leitura%20de%20Tarot.",
     label: "WhatsApp",
-    icon: "/images/icons/whats.png",
+    icon: "/images/icons/whats.PNG",
   },
   {
     href: "https://www.instagram.com/tarotraissa/",
@@ -24,7 +24,7 @@ const SOCIAL_LINKS = [
   {
     href: "https://www.tiktok.com/@tarotraissa",
     label: "TikTok",
-    icon: "/images/icons/tiktok.png",
+    icon: "/images/icons/tiktok.PNG",
   },
 ];
 
